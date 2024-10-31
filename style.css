@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 10;
+    padding: 10;
+    background-color: rgb(218, 244, 218);
+    height: 100vh;
+    width: 100vw;
+}
+
+h2
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: 50px;
+    ;
+}
+header {
+    background:rgb(17, 48, 30);
+    color: rgb(218, 244, 218);
+    padding: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.imgg{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+header .logo {
+    width: 500px;
+   height: 200px; 
+    font-size: 2.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: rgb(218, 244, 218);
+    text-decoration: none;
+}
+
+#hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 4.5em;
+}
+
+.btn {
+    background-color: black;
+    color: rgb(218, 244, 218);
+    padding: 30px 70px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 1.3s;
+    font-size: 1.3em;
+}
+
+.btn:hover {
+    background-color: #0b6a42;
+}
+
+#menu {
+    padding: 20px;
+    color: rgb(218, 244, 210);
+    background: rgb(30, 22, 22);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as categorias em relação ao eixo horizontal */
+}
+
+.menu-categories {
+    display: flex; /* Cria um contêiner flexível para as categorias */
+    justify-content: center; /* Centraliza as categorias horizontalmente */
+    margin-bottom: 20px; /* Espaço abaixo das categorias */
+}
+
+.menu-category {
+    margin: 0 20px; /* Espaço entre as categorias */
+}
+
+.menu-category h3 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: rgb(218, 244, 218);
+    text-align: center; /* Centraliza o texto do título */
+}
+
+/* Mantém o estilo dos itens do menu */
+.menu-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.menu-item {
+    display: inline-block;
+    border: 3px solid rgb(139, 152, 142);
+    padding: 20px;
+    border-radius: 25px;
+    width: 270px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(218, 244, 218);
+    transition: transform 3.3s;
+   margin: 20px;
+
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.menu-item img {
+    height: 200px;
+    width: 225px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.menu-item button {
+    background-color: rgb(218, 244, 218);
+    color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: #c2e0c2;
+}
+
+#carrinho, #reservas, #contato {
+    color: white;
+    padding: 20px;
+    background: rgb(139, 152, 142);
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(15, 19, 16);
+    color: white;
+}

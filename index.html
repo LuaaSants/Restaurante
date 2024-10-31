@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentinha do Grau</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="imgg">
+            <img src="./img/Captura de tela 2024-10-31 143152.png" alt="">
+            <div class="logo">Quentinha do Grau</div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#carrinho" id="cart-link">Carrinho (0)</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <link rel="stylesheet" href="img/Captura de tela 2024-10-30 154659.png">
+        <h1>Bem-vindo ao Quentinha do Grau</h1>
+        <h2>Experimente o melhor da culinária!</h2>
+        <a href="#menu" class="btn">Ver Menu</a>
+    </section>
+    <section id="menu">
+        
+
+        <div class="menu-category">
+            <h3>Almoço</h3>
+
+            <div class="menu-item">
+                <h4>Prato do Dia </h4>
+                <img src="img/Dicas tradicionais do prato feito.jpeg" alt="">
+                <p>R$ 20,00</p><button onclick="addToCart('Prato do Dia', 20)">Adicionar</button>
+            </div>
+
+            <div class="menu-item">
+                <h4>Filé Mignon</h4>
+                <img src="img/Filé Mignon ao Molho Madeira.jpeg" alt="">
+                <p>R$ 40,00</p><button onclick="addToCart('Filé Mignon', 40)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Frango Grelhado</h4>
+                <img src="img/60 receitas com peito de frango para todas as refeições.jpeg" alt="">
+                <p>R$ 25,00</p><button onclick="addToCart('Frango Grelhado', 25)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Arroz à grega</h4>
+                <img src="img/Arroz à grega para o natal_ O melhor arroz de festa!.jpeg" alt="">
+                <p>R$ 15,00</p><button onclick="addToCart('Arroz à grega', 15)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Feijão Tropeiro</h4>
+                <img src="img/Tropeiro beans.jpeg" alt="">
+                <p>R$ 12,00</p><button onclick="addToCart('Feijão Tropeiro', 12)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Strogonoff de Carne</h4>
+                <img src="img/Cómo hacer una deliciosa Ternera Strogonoff.jpeg" alt="">
+                <p>R$ 35,00</p><button onclick="addToCart('Strogonoff de Carne', 35)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Lasagna</h4>
+                <img src="img/Receita de Lasanha à bolonhesa - Guia da Cozinha.jpeg" alt="">
+                <p>R$ 30,00</p><button onclick="addToCart('Lasagna', 30)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Salada Caesar</h4>
+                <img src="img/Download AI generated Fresh caesar salad with cherry tomatoes and parmesan cheese on dark background for free.jpeg"
+                    alt="">
+                <p>R$ 15,00</p><button onclick="addToCart('Salada Caesar', 15)">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Jantar</h3>
+            <div class="menu-item">
+                <h4>Filé de Peixe</h4> <img
+                    src="img/14 Receitas de Filé de Peixe COM Variações Mega Saborosas Para Almoço E Jantar.jpeg"
+                    alt="">
+                <p>R$ 28,00</p><button onclick="addToCart('Filé de Peixe', 28)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Frango ao Curry</h4> <img
+                    src="img/Frango ao Curry com Abacaxi_ Uma Delícia para Surpreender o Paladar!.jpeg" alt="">
+                <p>R$ 30,00</p><button onclick="addToCart('Frango ao Curry', 30)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Espaguete à Carbonara</h4> <img
+                    src="img/Espaguetis a la carbonara (la auténtica receta de carbonara) - PequeRecetas.jpeg" alt="">
+                <p>R$ 22,00</p><button onclick="addToCart('Espaguete à Carbonara', 22)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Picanha Grelhada</h4> <img
+                    src="img/Picanha grelhada, tradicional corte brasileiro! _ Foto Premium.jpeg" alt="">
+                <p>R$ 50,00</p><button onclick="addToCart('Picanha Grelhada', 50)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Risoto de Funghi</h4> <img src="img/Captura de tela 2024-10-30 150406.png" alt="">
+                <p>R$ 36,00</p><button onclick="addToCart('Risoto de Funghi', 36)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Frutos do Mar</h4> <img src="img/Captura de tela 2024-10-30 150550.png" alt="">
+                <p>R$ 45,00</p><button onclick="addToCart('Frutos do Mar', 45)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Batata Recheada</h4> <img src="img/10 receitas diversas de batata recheada.jpeg" alt="">
+                <p>R$ 18,00</p><button onclick="addToCart('Batata Recheada', 18)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Salada de Quinoa</h4> <img
+                    src="img/Receita de Salada de Quinoa com Legumes Assados 🥗 _ Leveza e Sabor em Cada Garfada!.jpeg"
+                    alt="">
+                <p>R$ 20,00</p><button onclick="addToCart('Salada de Quinoa', 20)">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Bebidas</h3>
+            <div class="menu-item">
+                <h4>Água Mineral</h4> <img src="img/Água Mineral Evian  Sem Gás   Garrafa  1 L.jpeg" alt="">
+                <p>R$ 5,00</p><button onclick="addToCart('Água Mineral', 5)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Refrigerante</h4> <img src="img/Bebidas - Kintal Lanches.jpeg" alt="">
+                <p>R$ 6,00</p><button onclick="addToCart('Refrigerante', 6)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Suco Natural</h4> <img src="img/11 Sneaky Foods That Seem Vegetarian, But Definitely Aren't.jpeg"
+                    alt="">
+                <p>R$ 8,00</p><button onclick="addToCart('Suco Natural', 8)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Cerveja</h4> <img src="img/Vista frontal de copos de cerveja com trigo _ Foto Grátis.jpeg" alt="">
+                <p>R$ 10,00</p><button onclick="addToCart('Cerveja', 10)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Vinho</h4> <img src="img/Por que os brasileiros gostam dos vinhos argentinos Malbec_.jpeg" alt="">
+                <p>R$ 50,00</p><button onclick="addToCart('Vinho', 50)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Refrigerante Diet</h4> <img src="img/Captura de tela 2024-10-30 151709.png" alt="">
+                <p>R$ 6,00</p><button onclick="addToCart('Refrigerante Diet', 6)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Chá Gelado</h4> <img src="img/baixados.jpeg" alt="">
+                <p>R$ 7,00</p><button onclick="addToCart('Chá Gelado', 7)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Água com Gás</h4> <img src="img/água Mineral Crystal Natural Com Gás 500ml.jpeg" alt="">
+                <p>R$ 6,00</p><button onclick="addToCart('Água com Gás', 6)">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Sobremesa</h3>
+            <div class="menu-item">
+                <h4>Pudim</h4> <img src="img/Sobremesa para o Natal 🎄 Pudim sem ovo e sem forno.jpeg" alt="">
+                <p>R$ 10,00</p><button onclick="addToCart('Pudim', 10)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Torta de Limão</h4> <img
+                    src="img/Tarte au citron_ confira a receita de torta de limão siciliano.jpeg" alt="">
+                <p>R$ 12,00</p><button onclick="addToCart('Torta de Limão', 12)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Brownie</h4> <img src="img/Captura de tela 2024-10-30 152254.png" alt="">
+                <p>R$ 15,00</p><button onclick="addToCart('Brownie', 15)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Mousse de Maracujá</h4> <img src="img/Mousse de Maracujá.jpeg" alt="">
+                <p>R$ 12,00</p><button onclick="addToCart('Mousse de Maracujá', 12)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Gelato</h4> <img src="img/Gelato.jpeg" alt="">
+                <p>R$ 14,00</p><button onclick="addToCart('Gelato', 14)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Frutas da Estação</h4> <img src="img/Captura de tela 2024-10-30 153241.png" alt="">
+                <p>R$ 8,00</p><button onclick="addToCart('Frutas da Estação', 8)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Cheesecake</h4> <img src="img/Homemade Blueberry Sauce _ My Baking Addiction.jpeg" alt="">
+                <p>R$ 16,00</p><button onclick="addToCart('Cheesecake', 16)">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <h4>Bolo de Cenoura</h4> <img src="img/Bolo de cenoura trufado.jpeg" alt="">
+                <p>R$ 10,00</p><button onclick="addToCart('Bolo de Cenoura', 10)">Adicionar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-list"></ul>
+        <p>Total: R$ <span id="total-price">0</span></p>
+        <button onclick="checkout()">Finalizar Pedido</button>
+    </section>
+
+    <section id="reservas">
+        <h2>Reservas</h2>
+        <p>Reserve sua mesa com antecedência!</p>
+        <button onclick="alert('Reservas realizadas com sucesso!')">Reservar</button>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@quentinhadograu.com.br</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Quentinha do Grau - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
